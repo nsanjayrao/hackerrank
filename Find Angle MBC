@@ -3,10 +3,11 @@ from math import *
 #from numpy import *
 l_ab=int(input())
 l_bc=int(input())
-sqr=sqrt(l_ab**2+l_bc**2)
-l_mc=sqr/2
-sqr_1=sqrt(l_bc**2 - l_mc**2)
-tita=asin(l_mc/l_bc)
+l_ac=sqrt(l_ab**2+l_bc**2)
+l_mc=l_ac/2
+adj=l_bc/2
+#sqr_1=sqrt(l_bc**2 - l_mc**2)
+tita=acos(adj/l_mc)
 degree=round(degrees(tita))
 #degree=str(degree).replace('.0','')
 print(degree,chr(176),sep='')
