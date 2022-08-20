@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT# Enter your code here. Read input from STDIN. Print output to STDOUT
+no_eng_subs=int(input())
+l_of_eng_sub=set(map(int,input().split()))
+
+no_french_subs=int(input())
+l_of_french_sub=set(map(int,input().split()))
+
+total_but_not_both_sub = l_of_eng_sub.symmetric_difference(l_of_french_sub)
+print(len(total_but_not_both_sub))
