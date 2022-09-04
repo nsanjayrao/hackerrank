@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy
+n,m=map(int,input().split())
+Max=[]
+l=[]
+for i in range(n):
+    l.append(list(map(int,input().split())))
+a=numpy.min(l,axis=1)
+print(max(a))
+    
