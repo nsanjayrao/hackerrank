@@ -1,0 +1,10 @@
+from itertools import *
+K,M=map(int,input().split())
+N=[]
+for i in range(K):
+    N.append(map(int,input().split()[1:]))
+Max=-1
+
+for i in product(*N):
+    Max=max(sum(map(lambda x: x**2,i))%M,Max)
+print(Max)
